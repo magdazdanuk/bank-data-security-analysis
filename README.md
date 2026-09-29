@@ -370,3 +370,21 @@ Run the fraud detection view to confirm the analytical layer is operational:
 ```sql
 SELECT * FROM v_fraud_detection_patterns WHERE is_suspicious_location_jump = TRUE;
 ```
+
+---
+
+## Dashboards & Visual Reports
+
+Below are preview screenshots of the interactive Power BI dashboard connected directly to the PostgreSQL analytical views.
+
+### Page 1: Financial Executive Overview & Trends
+This page highlights overall spend metrics, 5-transaction rolling averages, and customer expenditure volume rankings.
+
+![Financial Executive Overview](docs/images/page1_financial_overview.png)
+
+---
+
+### Page 2: Fraud Monitoring & Risk Analysis
+Focused on operational security, tracking suspicious geographical jumps (*Impossible Travel*) detected via SQL window functions (`LAG`).
+
+![Fraud Monitoring & Risk Analysis](docs/images/page2_fraud_monitoring.png)

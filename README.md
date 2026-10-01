@@ -380,11 +380,11 @@ Below are preview screenshots of the interactive Power BI dashboard connected di
 ### Page 1: Financial Executive Overview & Trends
 This page highlights overall spend metrics, 5-transaction rolling averages, and customer expenditure volume rankings.
 
-![Financial Executive Overview](page_1_bp.png)
+![Financial Executive Overview](assets/page_1_bp.png)
 
 ---
 
 ### Page 2: Fraud Monitoring & Risk Analysis
 Focused on operational security, tracking suspicious geographical jumps (*Impossible Travel*) detected via SQL window functions (`LAG`).
 
-![Fraud Monitoring & Risk Analysis](page_2_bp.png)
+![Fraud Monitoring & Risk Analysis](assets/page_2_bp.png)

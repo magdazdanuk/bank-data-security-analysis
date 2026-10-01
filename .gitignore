@@ -1,0 +1,19 @@
+# Python execution & virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Environment variables & secrets
+.env
+config.ini
+
+# Power BI temporary & auto-recovery files
+*.tmp
+*.pbix.lock
+
+# System files
+.DS_Store
+Thumbs.db

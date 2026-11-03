@@ -4,8 +4,6 @@ An end-to-end, production-ready banking analytics platform built with **Python**
 
 ## System Architecture & Workflow
 
-[INSERT YOUR SYSTEM ARCHITECTURE DIAGRAM HERE]
-
 1. **Ingestion Engine (`Python`)**: Generates normalized, relational records for customers, accounts, cards, and transactions.
 
 2. **In-Flight Sanitation & Audit (`PostgreSQL Triggers`)**: Cleanses, standardizes, and validates incoming data on-the-fly while logging account balance changes to an isolated audit log.

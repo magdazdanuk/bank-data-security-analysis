@@ -1,6 +1,37 @@
 # Enterprise Banking Data Pipeline & Analytics Platform
 
-An end-to-end, production-ready banking analytics platform built with **Python**, **PostgreSQL**, and **Power BI**. The architecture handles automated real-time data cleansing via procedural triggers, auditing of core financial state changes, advanced SQL window functions for fraud detection and financial velocity analysis, and interactive executive reporting.
+## Project Goal
+
+This project resolves data quality and risk issues by pushing automated data sanitization, audit logging, and window-based fraud analytics (*Impossible Travel*) directly into PostgreSQL for instant visual reporting. Built as an end-to-end portfolio reference for data engineering and BI recruitment, it demonstrates production-grade database design and pipeline architecture for enterprise banking.
+
+---
+
+## Dashboards & Visual Reports
+
+Below are preview screenshots of the interactive Power BI dashboard connected directly to the PostgreSQL analytical views.
+
+### Page 1: Financial Executive Overview & Trends
+This page highlights overall spend metrics, 5-transaction rolling averages, and customer expenditure volume rankings.
+
+![Financial Executive Overview](assets/page_1_bp.png)
+
+---
+
+### Page 2: Fraud Monitoring & Risk Analysis
+Focused on operational security, tracking suspicious geographical jumps (*Impossible Travel*) detected via SQL window functions (`LAG`).
+
+![Fraud Monitoring & Risk Analysis](assets/page_2_bp.png)
+
+---
+
+## Tech Stack & Tools
+
+* **Database Engine & Core Logic**: PostgreSQL: triggers, automated sanitization, audit logging, B-Tree & partial indexing
+* **Analytical SQL**: PostgreSQL: views, window functions
+* **Data Ingestion & Generation**: Python 3 (Faker, psycopg2-binary)
+* **Business Intelligence & Visualization**: Power BI (DAX, dynamic dashboards)
+
+---
 
 ## System Architecture & Workflow
 
@@ -368,21 +399,3 @@ Run the fraud detection view to confirm the analytical layer is operational:
 ```sql
 SELECT * FROM v_fraud_detection_patterns WHERE is_suspicious_location_jump = TRUE;
 ```
-
----
-
-## Dashboards & Visual Reports
-
-Below are preview screenshots of the interactive Power BI dashboard connected directly to the PostgreSQL analytical views.
-
-### Page 1: Financial Executive Overview & Trends
-This page highlights overall spend metrics, 5-transaction rolling averages, and customer expenditure volume rankings.
-
-![Financial Executive Overview](assets/page_1_bp.png)
-
----
-
-### Page 2: Fraud Monitoring & Risk Analysis
-Focused on operational security, tracking suspicious geographical jumps (*Impossible Travel*) detected via SQL window functions (`LAG`).
-
-![Fraud Monitoring & Risk Analysis](assets/page_2_bp.png)
